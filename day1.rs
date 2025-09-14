@@ -1,7 +1,7 @@
 use std::thread::sleep;
 use std::time::Duration;
 
-fn ex() {
+fn main() {
   let immutable = "I am an immutable message, this means that it cannot be changed!";
   let mut mutable = "But I am immutable's evil twin, I do the EXACT OPPOSITE of immutable.";
   println!("{}", immutable); // Note, when displaying variables in println, add a "{}" and a comma after.
