@@ -1,13 +1,13 @@
 use std::thread::sleep;
 use std::time::Duration;
 
-fn main() {
+fn main() { // Note: fn main() is essentially the primary execution point for Rust, it runs first.
   let immutable = "I am an immutable message, this means that it cannot be changed!";
   let mut mutable = "But I am immutable's evil twin, I do the EXACT OPPOSITE of immutable.";
   println!("{}", immutable); // Note, when displaying variables in println, add a "{}" and a comma after.
   println!("{}", mutable);
   sleep(Duration::from_secs(2));
-  mutable = "See? I just changed myself after two seconds!"
+  mutable = "See? I just changed myself after two seconds!";
   println!("{}", mutable);
 }
 
