@@ -7,7 +7,7 @@ fn main() {
   let mut mined: bool = false;
   let mut rng = rand::thread_rng();
   loop {
-    let random: u128 = rng.gen::<u128> & ((1u128 << 80) - 1);
+    let random: u128 = rng.gen::<u128>() & ((1u128 << 80) - 1);
     if random <= target {
       println!("[!] - MINED!");
       mined = true;
